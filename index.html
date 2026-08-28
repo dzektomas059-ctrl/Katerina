@@ -1,0 +1,2659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KATERINA — High Fashion & Editorial Model Portfolio</title>
+  <meta name="description" content="Official Model Portfolio and Composite Card for Katerina. Runway, Editorial, Commercial, and High Fashion.">
+  
+  <!-- Google Fonts: Cormorant Garamond (Serif) & Montserrat (Sans-Serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       1. CSS RESET & VARIABLES (LUXURY MONOCHROME B&W PALETTE)
+       ========================================================================== */
+    :root {
+      --bg-white: #ffffff;
+      --bg-light: #f8f8f8;
+      --bg-subtle: #f0f0f0;
+      --text-black: #0d0d0d;
+      --text-dark: #1a1a1a;
+      --text-gray: #777777;
+      --text-light-gray: #999999;
+      --border-light: #e5e5e5;
+      --border-dark: #1a1a1a;
+      
+      --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+      --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      
+      --transition-fast: 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      --transition-smooth: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      --container-width: 1480px;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      background-color: var(--bg-white);
+      color: var(--text-black);
+      overflow-x: hidden;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      font-weight: 300;
+      line-height: 1.6;
+      background-color: var(--bg-white);
+      overflow-x: hidden;
+      color: var(--text-dark);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    ::selection {
+      background-color: var(--text-black);
+      color: var(--bg-white);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: opacity var(--transition-fast);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    button, input, textarea, select {
+      font-family: inherit;
+      font-size: inherit;
+      border: none;
+      outline: none;
+      background: none;
+    }
+
+    /* Container Utility */
+    .container {
+      width: 100%;
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 20px;
+      }
+    }
+
+    /* Editorial Typography Rules */
+    .serif-title {
+      font-family: var(--font-serif);
+      font-weight: 300;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+      text-transform: uppercase;
+    }
+
+    .tracking-luxury {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 70px;
+      position: relative;
+    }
+
+    .section-header .sub-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--text-gray);
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+
+    .section-header h2 {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 300;
+    }
+
+    .section-header .divider-line {
+      width: 40px;
+      height: 1px;
+      background: var(--text-black);
+      margin: 20px auto 0 auto;
+    }
+
+    /* ==========================================================================
+       2. HEADER & STICKY NAVIGATION
+       ========================================================================== */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 84px;
+      background-color: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-light);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      transition: background-color var(--transition-fast), height var(--transition-fast);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.9rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-black);
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: var(--text-black);
+      position: relative;
+      padding: 6px 0;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background-color: var(--text-black);
+      transition: width var(--transition-fast);
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .btn-book {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      min-height: 44px;
+      background-color: var(--text-black);
+      color: var(--bg-white);
+      font-size: 0.7rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      font-weight: 500;
+      border: 1px solid var(--text-black);
+      transition: all var(--transition-fast);
+      cursor: pointer;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    .btn-book:hover {
+      background-color: var(--bg-white);
+      color: var(--text-black);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      min-height: 44px;
+      background-color: transparent;
+      color: var(--text-black);
+      font-size: 0.7rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      font-weight: 500;
+      border: 1px solid var(--border-dark);
+      transition: all var(--transition-fast);
+      cursor: pointer;
+      text-align: center;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--text-black);
+      color: var(--bg-white);
+    }
+
+    /* Mobile Hamburger */
+    .mobile-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 12px;
+      min-width: 44px;
+      min-height: 44px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      transition: background-color var(--transition-fast);
+    }
+
+    .mobile-toggle:hover,
+    .mobile-toggle:focus {
+      background-color: var(--bg-light);
+    }
+
+    .mobile-toggle span {
+      width: 24px;
+      height: 2px;
+      background-color: var(--text-black);
+      transition: transform var(--transition-fast), opacity var(--transition-fast);
+      border-radius: 2px;
+    }
+
+    .mobile-menu {
+      position: fixed;
+      top: 84px;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 84px);
+      background-color: var(--bg-white);
+      border-top: 1px solid var(--border-light);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      transform: translateY(-100%);
+      opacity: 0;
+      pointer-events: none;
+      transition: all var(--transition-smooth);
+      z-index: 999;
+      padding: 20px;
+    }
+
+    .mobile-menu.active {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .mobile-menu .nav-link {
+      font-size: 1.2rem;
+      letter-spacing: 0.2em;
+      padding: 16px 24px;
+      min-height: 48px;
+      min-width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      transition: background-color var(--transition-fast), color var(--transition-fast);
+    }
+
+    .mobile-menu .nav-link:hover,
+    .mobile-menu .nav-link:focus {
+      background-color: var(--bg-light);
+      color: var(--text-black);
+    }
+
+    .mobile-menu .btn-book.mobile-link {
+      width: 80%;
+      max-width: 280px;
+      text-align: center;
+      padding: 16px 32px;
+      margin-top: 8px;
+    }
+
+    /* ==========================================================================
+       3. HERO SECTION
+       ========================================================================== */
+    .hero-section {
+      padding-top: 130px;
+      padding-bottom: 80px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      background-color: var(--bg-white);
+      overflow: hidden;
+    }
+
+    .hero-bg-text {
+      position: absolute;
+      top: 48%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: var(--font-serif);
+      font-size: clamp(5rem, 19vw, 21rem);
+      font-weight: 300;
+      color: rgba(0, 0, 0, 0.025);
+      letter-spacing: 0.12em;
+      white-space: nowrap;
+      pointer-events: none;
+      z-index: 0;
+      user-select: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.35fr 1fr;
+      align-items: center;
+      gap: 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-col-left {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .hero-col-left .editorial-stamp {
+      font-size: 0.68rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--text-gray);
+      border-left: 2px solid var(--text-black);
+      padding-left: 14px;
+    }
+
+    .hero-title {
+      font-size: clamp(3.2rem, 6.5vw, 5.5rem);
+      font-weight: 300;
+      line-height: 0.95;
+    }
+
+    .hero-title span {
+      display: block;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .hero-col-center {
+      position: relative;
+    }
+
+    .hero-photo-frame {
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border-light);
+      background-color: var(--bg-subtle);
+      aspect-ratio: 3 / 4.2;
+    }
+
+    .hero-photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
+
+    .hero-photo-frame:hover img {
+      transform: scale(1.02);
+    }
+
+    .hero-photo-badge {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      background: rgba(13, 13, 13, 0.85);
+      color: var(--bg-white);
+      padding: 6px 14px;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .hero-col-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 28px;
+    }
+
+    .hero-quick-specs {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+      border-top: 1px solid var(--border-light);
+      padding-top: 20px;
+    }
+
+    .spec-quick-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-dark);
+    }
+
+    .spec-quick-row span:first-child {
+      color: var(--text-light-gray);
+    }
+
+    .hero-bottom-bar {
+      margin-top: 60px;
+      border-top: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-light);
+      padding: 16px 0;
+      text-align: center;
+      font-size: 0.75rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--text-gray);
+      background-color: var(--bg-light);
+    }
+
+    /* ==========================================================================
+       4. MODEL SPECIFICATION CARD (REBEL / ESEE AGENCY STYLE)
+       ========================================================================== */
+    .specs-section {
+      padding: 100px 0;
+      background-color: var(--bg-light);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .specs-board {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: var(--bg-white);
+      border: 1px solid var(--border-light);
+      padding: 60px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    }
+
+    .specs-board-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 30px;
+      border-bottom: 2px solid var(--text-black);
+      margin-bottom: 40px;
+    }
+
+    .specs-board-header h3 {
+      font-size: 2.4rem;
+      font-weight: 300;
+    }
+
+    .specs-board-header .agency-meta {
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      color: var(--text-gray);
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    .specs-grid-table {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px 20px;
+      margin-bottom: 50px;
+    }
+
+    .spec-item {
+      display: flex;
+      flex-direction: column;
+      border-left: 1px solid var(--border-light);
+      padding-left: 16px;
+    }
+
+    .spec-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--text-light-gray);
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    .spec-value {
+      font-family: var(--font-serif);
+      font-size: 1.55rem;
+      color: var(--text-black);
+      font-weight: 400;
+      letter-spacing: 0.05em;
+    }
+
+    .specs-action-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-top: 30px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .specs-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .specs-links a {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: var(--text-dark);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .specs-links a:hover {
+      opacity: 0.6;
+    }
+
+    /* ==========================================================================
+       5. SNAPS & POLAROIDS / COMP CARD (PHOTOS 2, 3, 4, 5)
+       ========================================================================== */
+    .snaps-section {
+      padding: 120px 0;
+      background-color: var(--bg-white);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .snaps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .snap-card {
+      background: var(--bg-light);
+      border: 1px solid var(--border-light);
+      padding: 14px 14px 22px 14px;
+      display: flex;
+      flex-direction: column;
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+      cursor: pointer;
+    }
+
+    .snap-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.06);
+    }
+
+    .snap-img-wrapper {
+      position: relative;
+      aspect-ratio: 3 / 4.2;
+      overflow: hidden;
+      background-color: var(--bg-subtle);
+      margin-bottom: 16px;
+    }
+
+    .snap-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .snap-card:hover .snap-img-wrapper img {
+      transform: scale(1.03);
+    }
+
+    .snap-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-dark);
+      padding: 0 4px;
+    }
+
+    .snap-meta span:last-child {
+      color: var(--text-light-gray);
+    }
+
+    /* ==========================================================================
+       6. EDITORIAL & MAGAZINE COLLAGE (PHOTOS 6, 7, 8, 9, 10, 11)
+       ========================================================================== */
+    .editorial-section {
+      padding: 130px 0;
+      background-color: var(--bg-light);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .magazine-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: 100px;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .mag-item {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--border-light);
+      background-color: var(--bg-subtle);
+      cursor: pointer;
+    }
+
+    .mag-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s ease;
+    }
+
+    .mag-item:hover img {
+      transform: scale(1.04);
+    }
+
+    .mag-overlay-caption {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(13, 13, 13, 0.75) 0%, transparent 60%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 24px;
+      opacity: 0;
+      transition: opacity var(--transition-fast);
+    }
+
+    .mag-item:hover .mag-overlay-caption {
+      opacity: 1;
+    }
+
+    .mag-overlay-caption span {
+      color: var(--bg-white);
+      font-size: 0.68rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+
+    .mag-overlay-caption h4 {
+      color: var(--bg-white);
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+
+    /* Asymmetric Spans */
+    .mag-item-1 { grid-column: span 7; grid-row: span 6; }
+    .mag-item-2 { grid-column: span 5; grid-row: span 3; }
+    .mag-item-3 { grid-column: span 5; grid-row: span 3; }
+    .mag-item-4 { grid-column: span 4; grid-row: span 4; }
+    .mag-item-5 { grid-column: span 4; grid-row: span 4; }
+    .mag-item-6 { grid-column: span 4; grid-row: span 4; }
+
+    .magazine-quote-box {
+      margin-top: 60px;
+      text-align: center;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 40px 20px 0 20px;
+    }
+
+    .magazine-quote {
+      font-family: var(--font-serif);
+      font-size: clamp(1.4rem, 3vw, 2.2rem);
+      font-style: italic;
+      font-weight: 300;
+      line-height: 1.35;
+      color: var(--text-black);
+    }
+
+    .magazine-quote-author {
+      margin-top: 14px;
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--text-gray);
+    }
+
+    /* ==========================================================================
+       7. MAIN PORTFOLIO GRID & TABS (PHOTOS 12 – 29 = 18 PHOTOS)
+       ========================================================================== */
+    .portfolio-section {
+      padding: 130px 0;
+      background-color: var(--bg-white);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .filter-tabs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 60px;
+    }
+
+    .filter-btn {
+      padding: 12px 24px;
+      min-height: 44px;
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: var(--text-gray);
+      border: 1px solid var(--border-light);
+      cursor: pointer;
+      background: var(--bg-white);
+      transition: all var(--transition-fast);
+      border-radius: 4px;
+    }
+
+    .filter-btn:hover {
+      color: var(--text-black);
+      border-color: var(--text-black);
+    }
+
+    .filter-btn.active {
+      background-color: var(--text-black);
+      color: var(--bg-white);
+      border-color: var(--text-black);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      background-color: var(--bg-light);
+      border: 1px solid var(--border-light);
+      cursor: pointer;
+      aspect-ratio: 3 / 4.2;
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .gallery-item.hidden {
+      display: none;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.04);
+    }
+
+    .gallery-item-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+      background: linear-gradient(to top, rgba(13, 13, 13, 0.85), transparent);
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all var(--transition-fast);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .gallery-item:hover .gallery-item-info {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .gallery-item-info .title {
+      color: var(--bg-white);
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .gallery-item-info .category {
+      color: var(--text-light-gray);
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .gallery-view-icon {
+      color: var(--bg-white);
+      font-size: 1.1rem;
+    }
+
+    /* ==========================================================================
+       8. MOTION & RUNWAY / BACKSTAGE (PHOTOS 30, 31, 32, 33)
+       ========================================================================== */
+    .motion-section {
+      padding: 120px 0;
+      background-color: var(--bg-light);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .motion-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .motion-card {
+      position: relative;
+      background: var(--bg-white);
+      border: 1px solid var(--border-light);
+      overflow: hidden;
+      cursor: pointer;
+      aspect-ratio: 3 / 4.5;
+    }
+
+    .motion-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .motion-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .motion-card-footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 16px;
+      background: rgba(13, 13, 13, 0.85);
+      color: var(--bg-white);
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* ==========================================================================
+       9. ABOUT & WORK WITH ME SECTION
+       ========================================================================== */
+    .about-section {
+      padding: 130px 0;
+      background-color: var(--bg-white);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      margin-bottom: 90px;
+    }
+
+    .about-text h3 {
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      margin-bottom: 24px;
+    }
+
+    .about-text p {
+      font-size: 0.95rem;
+      line-height: 1.85;
+      color: var(--text-gray);
+      margin-bottom: 20px;
+    }
+
+    .about-text p strong {
+      color: var(--text-black);
+      font-weight: 500;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .service-card {
+      border: 1px solid var(--border-light);
+      padding: 36px 24px;
+      background: var(--bg-light);
+      transition: border-color var(--transition-fast), transform var(--transition-fast);
+    }
+
+    .service-card:hover {
+      border-color: var(--text-black);
+      transform: translateY(-3px);
+    }
+
+    .service-num {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      color: var(--text-light-gray);
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .service-card h4 {
+      font-size: 0.85rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .service-card p {
+      font-size: 0.8rem;
+      color: var(--text-gray);
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       10. CONTACT & BOOKING SECTION (PHOTOS 34, 35)
+       ========================================================================== */
+    .contact-section {
+      padding: 130px 0;
+      background-color: var(--bg-light);
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .contact-portrait-frame {
+      position: relative;
+      border: 1px solid var(--border-light);
+      background-color: var(--bg-subtle);
+      overflow: hidden;
+      aspect-ratio: 3 / 4.5;
+    }
+
+    .contact-portrait-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .contact-portrait-frame:hover img {
+      transform: scale(1.02);
+    }
+
+    .booking-form-box {
+      background: var(--bg-white);
+      border: 1px solid var(--border-light);
+      padding: 50px 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    }
+
+    .booking-form-box h3 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .booking-form-box .sub {
+      text-align: center;
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--text-gray);
+      margin-bottom: 36px;
+      display: block;
+    }
+
+    .form-group {
+      margin-bottom: 22px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 14px 16px;
+      background: var(--bg-light);
+      border: 1px solid var(--border-light);
+      color: var(--text-black);
+      font-size: 1rem;
+      transition: border-color var(--transition-fast), background var(--transition-fast);
+      border-radius: 4px;
+      min-height: 48px;
+    }
+
+    .form-control:focus {
+      border-color: var(--text-black);
+      background: var(--bg-white);
+      outline: none;
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 16px;
+      background-color: var(--text-black);
+      color: var(--bg-white);
+      font-size: 0.8rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      font-weight: 500;
+      border: 1px solid var(--text-black);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      margin-top: 10px;
+      min-height: 52px;
+      border-radius: 4px;
+    }
+
+    .btn-submit:hover {
+      background-color: var(--bg-white);
+      color: var(--text-black);
+    }
+
+    .direct-contacts {
+      margin-top: 40px;
+      border-top: 1px solid var(--border-light);
+      padding-top: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .contact-pill {
+      display: flex;
+      flex-direction: column;
+      padding: 14px 16px;
+      min-height: 48px;
+      border: 1px solid var(--border-light);
+      background: var(--bg-light);
+      transition: border-color var(--transition-fast), background var(--transition-fast);
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    .contact-pill:hover {
+      border-color: var(--text-black);
+      background: var(--bg-white);
+    }
+
+    .contact-pill .label {
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-light-gray);
+    }
+
+    .contact-pill .val {
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--text-black);
+      margin-top: 2px;
+      word-break: break-all;
+    }
+
+    /* ==========================================================================
+       11. FOOTER
+       ========================================================================== */
+    .footer {
+      background-color: var(--text-black);
+      color: var(--bg-white);
+      padding: 70px 0 40px 0;
+      border-top: 1px solid var(--border-dark);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 40px;
+      margin-bottom: 30px;
+    }
+
+    .footer-logo {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+    }
+
+    .footer-nav {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .footer-nav a {
+      font-size: 0.7rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--text-light-gray);
+    }
+
+    .footer-nav a:hover {
+      color: var(--bg-white);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-gray);
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    /* ==========================================================================
+       12. FULLSCREEN LIGHTBOX MODAL
+       ========================================================================== */
+    .lightbox-modal {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(10, 10, 10, 0.96);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--transition-fast);
+    }
+
+    .lightbox-modal.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .lightbox-content-wrapper {
+      position: relative;
+      max-width: 90vw;
+      max-height: 88vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .lightbox-img {
+      max-width: 88vw;
+      max-height: 80vh;
+      object-fit: contain;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      user-select: none;
+    }
+
+    .lightbox-caption {
+      margin-top: 18px;
+      color: var(--bg-white);
+      font-size: 0.75rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .lightbox-counter {
+      color: var(--text-light-gray);
+    }
+
+    .lightbox-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: var(--bg-white);
+      font-size: 2.5rem;
+      cursor: pointer;
+      padding: 20px;
+      min-width: 60px;
+      min-height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: opacity var(--transition-fast), transform var(--transition-fast), background var(--transition-fast);
+      user-select: none;
+      opacity: 0.6;
+    }
+
+    .lightbox-btn:hover {
+      opacity: 1;
+      transform: translateY(-50%) scale(1.1);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .lightbox-prev { left: 20px; }
+    .lightbox-next { right: 20px; }
+
+    .lightbox-close {
+      position: absolute;
+      top: 24px;
+      right: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: var(--bg-white);
+      font-size: 2rem;
+      cursor: pointer;
+      opacity: 0.6;
+      min-width: 52px;
+      min-height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: opacity var(--transition-fast), background var(--transition-fast);
+    }
+
+    .lightbox-close:hover {
+      opacity: 1;
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+/* ==========================================================================
+        13. RESPONSIVE BREAKPOINTS (DESKTOP / TABLET / MOBILE)
+        ========================================================================== */
+    @media (max-width: 1200px) {
+      .hero-grid {
+        grid-template-columns: 1fr 1.2fr;
+      }
+      .hero-col-right {
+        grid-column: span 2;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .hero-quick-specs {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border-top: none;
+        padding-top: 0;
+      }
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .magazine-grid {
+        grid-auto-rows: 80px;
+      }
+      .contact-layout {
+        grid-template-columns: 1fr 1fr;
+      }
+      .contact-portrait-right {
+        display: none;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .nav-menu, .btn-book-header {
+        display: none;
+      }
+      .mobile-toggle {
+        display: flex;
+      }
+      .snaps-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .motion-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .specs-grid-table {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-section {
+        padding-top: 110px;
+        padding-bottom: 60px;
+        min-height: auto;
+      }
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      .hero-col-center {
+        order: -1;
+        max-width: 100%;
+      }
+      .hero-photo-frame {
+        aspect-ratio: 3 / 4;
+        max-height: 50vh;
+      }
+      .hero-col-right {
+        grid-column: span 1;
+        flex-direction: column;
+        width: 100%;
+      }
+      .hero-quick-specs {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+      }
+      .hero-title {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+      }
+      .specs-board {
+        padding: 30px 20px;
+      }
+      .specs-board-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .snaps-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .motion-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .services-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      .contact-portrait-frame {
+        max-height: 400px;
+        aspect-ratio: 3 / 4;
+      }
+      .magazine-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .mag-item {
+        aspect-ratio: 3 / 4;
+      }
+      .mag-item-1,
+      .mag-item-2,
+      .mag-item-3,
+      .mag-item-4,
+      .mag-item-5,
+      .mag-item-6 {
+        grid-column: auto;
+        grid-row: auto;
+      }
+      .lightbox-btn {
+        font-size: 2rem;
+        padding: 16px;
+        min-width: 48px;
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .lightbox-prev { left: 10px; }
+      .lightbox-next { right: 10px; }
+      .lightbox-close {
+        top: 16px;
+        right: 16px;
+        font-size: 2.2rem;
+        min-width: 48px;
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .filter-btn {
+        min-height: 44px;
+        padding: 12px 20px;
+      }
+      .mobile-toggle {
+        min-width: 44px;
+        min-height: 44px;
+        padding: 12px;
+      }
+      .btn-book,
+      .btn-secondary {
+        min-height: 44px;
+        padding: 14px 28px;
+      }
+      .form-control {
+        min-height: 44px;
+        padding: 14px 16px;
+        font-size: 1rem; /* Prevents zoom on iOS */
+      }
+      textarea.form-control {
+        min-height: 120px;
+      }
+      .btn-submit {
+        min-height: 50px;
+        padding: 16px;
+        font-size: 0.8rem;
+      }
+      .contact-pill {
+        min-height: 44px;
+        padding: 14px 16px;
+      }
+      .direct-contacts {
+        grid-template-columns: 1fr;
+      }
+      .section-header {
+        margin-bottom: 50px;
+      }
+      .section-header h2 {
+        font-size: clamp(1.8rem, 6vw, 2.8rem);
+      }
+      .hero-bottom-bar {
+        font-size: 0.65rem;
+        letter-spacing: 0.2em;
+        padding: 12px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 16px;
+      }
+      .hero-title {
+        font-size: clamp(2rem, 9vw, 3.2rem);
+      }
+      .hero-photo-frame {
+        max-height: 45vh;
+      }
+      .specs-grid-table {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .spec-item {
+        border-left: none;
+        padding-left: 0;
+        border-top: 1px solid var(--border-light);
+        padding-top: 16px;
+      }
+      .spec-item:first-child {
+        border-top: none;
+        padding-top: 0;
+      }
+      .mag-overlay-caption {
+        padding: 16px;
+      }
+      .mag-overlay-caption h4 {
+        font-size: 1.1rem;
+      }
+      .lightbox-img {
+        max-width: 95vw;
+        max-height: 70vh;
+      }
+      .lightbox-caption {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+      }
+    }
+
+    /* iPhone X+ safe area handling */
+    @supports (padding: max(0px)) {
+      @media (max-width: 640px) {
+        .lightbox-close {
+          top: max(16px, env(safe-area-inset-top));
+          right: max(16px, env(safe-area-inset-right));
+        }
+        .lightbox-prev {
+          left: max(10px, env(safe-area-inset-left));
+        }
+        .lightbox-next {
+          right: max(10px, env(safe-area-inset-right));
+        }
+        .contact-portrait-frame {
+          max-height: calc(400px - env(safe-area-inset-bottom));
+        }
+        .hero-section {
+          padding-top: max(110px, calc(110px + env(safe-area-inset-top)));
+        }
+      }
+    }
+
+    /* Print styling for Composite Card download */
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      .specs-section, .specs-section * {
+        visibility: visible;
+      }
+      .specs-section {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 0;
+        background: #fff;
+      }
+      .specs-action-bar {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">KATERINA</a>
+      
+      <ul class="nav-menu">
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#snaps" class="nav-link">Snaps & Polaroids</a></li>
+        <li><a href="#editorial" class="nav-link">Editorial</a></li>
+        <li><a href="#measurements" class="nav-link">Measurements</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <a href="#contact" class="btn-book btn-book-header">BOOK MODEL</a>
+        <div class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#portfolio" class="nav-link mobile-link">PORTFOLIO</a>
+    <a href="#snaps" class="nav-link mobile-link">SNAPS / POLAROIDS</a>
+    <a href="#editorial" class="nav-link mobile-link">EDITORIAL</a>
+    <a href="#measurements" class="nav-link mobile-link">MEASUREMENTS</a>
+    <a href="#about" class="nav-link mobile-link">ABOUT</a>
+    <a href="#contact" class="nav-link mobile-link">CONTACT</a>
+    <a href="#contact" class="btn-book mobile-link" style="margin-top: 15px;">BOOK MODEL / INQUIRE</a>
+  </div>
+
+  <!-- ==========================================================================
+       SECTION 1: HERO (PHOTO 1)
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-text">KATERINA</div>
+
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left Hero Column -->
+        <div class="hero-col-left">
+          <div class="editorial-stamp">REBEL & ELITE AGENCY STANDARD</div>
+          <h1 class="serif-title hero-title">
+            KATERINA <span>MODEL</span>
+          </h1>
+          <p style="font-size: 0.85rem; color: var(--text-gray); max-width: 320px; line-height: 1.7;">
+            High Fashion, Runway, Commercial and Luxury Beauty representative. Available for worldwide bookings and international placements.
+          </p>
+        </div>
+
+        <!-- Center Hero Column (PHOTO 1) -->
+        <div class="hero-col-center">
+          <div class="hero-photo-frame lightbox-trigger" data-photo-id="1" data-caption="Hero Editorial Lookbook / Katerina" data-category="Hero Campaign">
+            <!-- ================= PHOTO 1 ================= -->
+            <img 
+              src="IMG_8468.JPG" 
+              data-fallback="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=80" 
+              alt="Katerina — High Fashion Model" 
+              class="model-img"
+              loading="eager"
+            >
+            <div class="hero-photo-badge">IMG_8468 / 01</div>
+          </div>
+        </div>
+
+        <!-- Right Hero Column -->
+        <div class="hero-col-right">
+          <div>
+            <span class="tracking-luxury" style="color: var(--text-light-gray); display: block; margin-bottom: 6px;">COMP CARD SPECIFICATION</span>
+            <h3 class="serif-title" style="font-size: 1.8rem;">PARIS • MILAN • NY</h3>
+          </div>
+
+          <div class="hero-quick-specs">
+            <div class="spec-quick-row">
+              <span>HEIGHT</span>
+              <strong>175 CM</strong>
+            </div>
+            <div class="spec-quick-row">
+              <span>BUST</span>
+              <strong>85 CM</strong>
+            </div>
+            <div class="spec-quick-row">
+              <span>WAIST</span>
+              <strong>60 CM</strong>
+            </div>
+            <div class="spec-quick-row">
+              <span>HIPS</span>
+              <strong>90 CM</strong>
+            </div>
+          </div>
+
+          <a href="#measurements" class="btn-secondary" style="width: 100%;">FULL SPECIFICATION</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Editorial Bottom Sub-bar -->
+    <div class="hero-bottom-bar">
+      FASHION • RUNWAY • EDITORIAL • COMMERCIAL MODEL
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: MODEL SPECIFICATION CARD (METRIC STRICT)
+       ========================================================================== -->
+  <section class="specs-section" id="measurements">
+    <div class="container">
+      <div class="specs-board">
+        
+        <div class="specs-board-header">
+          <div>
+            <span class="tracking-luxury" style="color: var(--text-gray); display: block; margin-bottom: 4px;">COMPOSITE CARD / METRIC</span>
+            <h3 class="serif-title">KATERINA</h3>
+          </div>
+          <div class="agency-meta">
+            <div>REPRESENTATION: DIRECT / PLACEMENT</div>
+            <div>STATUS: ACTIVE WORLDWIDE</div>
+          </div>
+        </div>
+
+        <!-- 8 Metric Parameters Grid -->
+        <div class="specs-grid-table">
+          <div class="spec-item">
+            <span class="spec-label">HEIGHT</span>
+            <span class="spec-value">175 cm</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">BUST</span>
+            <span class="spec-value">85 cm</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">WAIST</span>
+            <span class="spec-value">60 cm</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">HIPS</span>
+            <span class="spec-value">90 cm</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">SHOES</span>
+            <span class="spec-value">37 EU</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">HAIR</span>
+            <span class="spec-value">Blond</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">EYES</span>
+            <span class="spec-value">Blue-Gray</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">DRESS</span>
+            <span class="spec-value">34/36 EU</span>
+          </div>
+        </div>
+
+        <div class="specs-action-bar">
+          <div class="specs-links">
+            <a href="javascript:void(0)" onclick="window.print()">
+              <span>↓</span> DOWNLOAD COMP CARD (PDF)
+            </a>
+            <a href="https://instagram.com/katushaa_ak" target="_blank" rel="noopener">
+              <span>↗</span> INSTAGRAM
+            </a>
+          </div>
+
+          <a href="#contact" class="btn-book">BOOKING INQUIRY</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: SNAPS & POLAROIDS (PHOTOS 2, 3, 4, 5)
+       ========================================================================== -->
+  <section class="snaps-section" id="snaps">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-tag">AGENCY CASTING MATERIAL</span>
+        <h2 class="serif-title">SNAPS & POLAROIDS</h2>
+        <p style="color: var(--text-gray); font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 10px;">
+          Unretouched Clean Polaroids • Natural Light • Metric Proportions
+        </p>
+        <div class="divider-line"></div>
+      </div>
+
+      <div class="snaps-grid">
+        
+        <!-- SNAP 1 (PHOTO 2) -->
+        <div class="snap-card lightbox-trigger" data-photo-id="2" data-caption="Agency Snap 01: Natural Headshot / Close-Up" data-category="Polaroids">
+          <div class="snap-img-wrapper">
+            <!-- ================= PHOTO 2 ================= -->
+            <img 
+              src="IMG_8398.PNG" 
+              data-fallback="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" 
+              alt="Snap 01 — Close Up Beauty" 
+              class="model-img" 
+              loading="lazy"
+            >
+          </div>
+          <div class="snap-meta">
+            <span>01 / HEADSHOT</span>
+            <span>CLEAN BEAUTY</span>
+          </div>
+        </div>
+
+        <!-- SNAP 2 (PHOTO 3) -->
+        <div class="snap-card lightbox-trigger" data-photo-id="3" data-caption="Agency Snap 02: Full Length Front / Natural Posture" data-category="Polaroids">
+          <div class="snap-img-wrapper">
+            <!-- ================= PHOTO 3 ================= -->
+            <img 
+              src="IMG_8399.PNG" 
+              data-fallback="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" 
+              alt="Snap 02 — Full Length Front" 
+              class="model-img" 
+              loading="lazy"
+            >
+          </div>
+          <div class="snap-meta">
+            <span>02 / FULL LENGTH</span>
+            <span>FRONT 175 CM</span>
+          </div>
+        </div>
+
+        <!-- SNAP 3 (PHOTO 4) -->
+        <div class="snap-card lightbox-trigger" data-photo-id="4" data-caption="Agency Snap 03: Profile & 3/4 Frame" data-category="Polaroids">
+          <div class="snap-img-wrapper">
+            <!-- ================= PHOTO 4 ================= -->
+            <img 
+              src="IMG_8400.PNG" 
+              data-fallback="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" 
+              alt="Snap 03 — Profile View" 
+              class="model-img" 
+              loading="lazy"
+            >
+          </div>
+          <div class="snap-meta">
+            <span>03 / PROFILE</span>
+            <span>ANGLES & JAWLINE</span>
+          </div>
+        </div>
+
+        <!-- SNAP 4 (PHOTO 5) -->
+        <div class="snap-card lightbox-trigger" data-photo-id="5" data-caption="Agency Snap 04: Full Length Back / Clean Posture" data-category="Polaroids">
+          <div class="snap-img-wrapper">
+            <!-- ================= PHOTO 5 ================= -->
+            <img 
+              src="IMG_8401.PNG" 
+              data-fallback="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80" 
+              alt="Snap 04 — Full Length Back" 
+              class="model-img" 
+              loading="lazy"
+            >
+          </div>
+          <div class="snap-meta">
+            <span>04 / WAIST & HIPS</span>
+            <span>60 CM / 90 CM</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: EDITORIAL & MAGAZINE COLLAGE (PHOTOS 6 – 11)
+       ========================================================================== */ -->
+  <section class="editorial-section" id="editorial">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-tag">VOGUE / HARPER'S BAZAAR AESTHETICS</span>
+        <h2 class="serif-title">EDITORIAL SPREAD</h2>
+        <div class="divider-line"></div>
+      </div>
+
+      <div class="magazine-grid">
+        
+        <!-- MAGAZINE ITEM 1 (PHOTO 6 - LARGE POSTER) -->
+        <div class="mag-item mag-item-1 lightbox-trigger" data-photo-id="6" data-caption="Editorial Feature: 'BELIEVE IN YOURSELF' Haute Couture" data-category="Magazine Spread">
+          <!-- ================= PHOTO 6 ================= -->
+          <img 
+            src="IMG_8453.JPG" 
+            data-fallback="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80" 
+            alt="Editorial Cover Spread" 
+            class="model-img"
+            loading="lazy"
+          >
+          <div class="mag-overlay-caption">
+            <span>VOL. 24 / MAIN EDITORIAL</span>
+            <h4>BELIEVE IN YOURSELF — PARIS</h4>
+          </div>
+        </div>
+
+        <!-- MAGAZINE ITEM 2 (PHOTO 7) -->
+        <div class="mag-item mag-item-2 lightbox-trigger" data-photo-id="7" data-caption="Avant-Garde Architectural Silhouette" data-category="Magazine Spread">
+          <!-- ================= PHOTO 7 ================= -->
+          <img 
+            src="IMG_8454.JPG" 
+            data-fallback="https://images.unsplash.com/photo-1488161628813-04466f872be2?auto=format&fit=crop&w=800&q=80" 
+            alt="Editorial 02" 
+            class="model-img"
+            loading="lazy"
+          >
+          <div class="mag-overlay-caption">
+            <span>EDITORIAL STUDY</span>
+            <h4>SHADOW & FORM</h4>
+          </div>
+        </div>
+
+        <!-- MAGAZINE ITEM 3 (PHOTO 8) -->
+        <div class="mag-item mag-item-3 lightbox-trigger" data-photo-id="8" data-caption="Minimalist Haute Joaillerie Story" data-category="Magazine Spread">
+          <!-- ================= PHOTO 8 ================= -->
+          <img 
+            src="IMG_8457.JPG" 
+            data-fallback="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80" 
+            alt="Editorial 03" 
+            class="model-img"
+            loading="lazy"
+          >
+          <div class="mag-overlay-caption">
+            <span>CAMPAIGN</span>
+            <h4>HIGH JEWELRY</h4>
+          </div>
+        </div>
+
+        <!-- MAGAZINE ITEM 4 (PHOTO 9) -->
+        <div class="mag-item mag-item-4 lightbox-trigger" data-photo-id="9" data-caption="Monochrome Texture & Fluid Motion" data-category="Magazine Spread">
+          <!-- ================= PHOTO 9 ================= -->
+          <img 
+            src="IMG_8458.JPG" 
+            data-fallback="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80" 
+            alt="Editorial 04" 
+            class="model-img"
+            loading="lazy"
+          >
+          <div class="mag-overlay-caption">
+            <span>TEXTURE</span>
+            <h4>SILK & TAILORING</h4>
+          </div>
+        </div>
+
+        <!-- MAGAZINE ITEM 5 (PHOTO 10) -->
+        <div class="mag-item mag-item-5 lightbox-trigger" data-photo-id="10" data-caption="Milan Fashion Week Editorial Portrait" data-category="Magazine Spread">
+          <!-- ================= PHOTO 10 ================= -->
+          <img 
+            src="IMG_8459.JPG" 
+            data-fallback="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80" 
+            alt="Editorial 05" 
+            class="model-img"
+            loading="lazy"
+          >
+          <div class="mag-overlay-caption">
+            <span>COVER SERIES</span>
+            <h4>MODERN ICON</h4>
+          </div>
+        </div>
+
+        <!-- MAGAZINE ITEM 6 (PHOTO 11) -->
+        <div class="mag-item mag-item-6 lightbox-trigger" data-photo-id="11" data-caption="Conceptual Noir High Fashion Session" data-category="Magazine Spread">
+          <!-- ================= PHOTO 11 ================= -->
+          <img 
+            src="IMG_8461.JPG" 
+            data-fallback="https://images.unsplash.com/photo-1524502397800-2eeaad7c3fe5?auto=format&fit=crop&w=800&q=80" 
+            alt="Editorial 06" 
+            class="model-img"
+            loading="lazy"
+          >
+          <div class="mag-overlay-caption">
+            <span>NOIR SERIES</span>
+            <h4>ETHEREAL LIGHT</h4>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="magazine-quote-box">
+        <p class="magazine-quote">
+          “Elegance is not about being noticed, it is about being remembered.”
+        </p>
+        <span class="magazine-quote-author">PARIS FASHION ARCHIVE • KATERINA BOOK</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: MAIN PORTFOLIO GRID & TABS (PHOTOS 12 – 29 = 18 PHOTOS)
+       ========================================================================== -->
+  <section class="portfolio-section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-tag">CURATED ARCHIVE</span>
+        <h2 class="serif-title">PORTFOLIO BOOK</h2>
+        <div class="divider-line"></div>
+      </div>
+
+      <!-- Interactive Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">ALL (18)</button>
+        <button class="filter-btn" data-filter="editorial">EDITORIAL (6)</button>
+        <button class="filter-btn" data-filter="commercial">COMMERCIAL & LOOKBOOK (6)</button>
+        <button class="filter-btn" data-filter="beauty">BEAUTY & PORTRAIT (6)</button>
+      </div>
+
+      <!-- 18 Main Gallery Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+
+        <!-- ===== 6 EDITORIAL PHOTOS (12 TO 17) ===== -->
+        <!-- PHOTO 12 -->
+        <div class="gallery-item lightbox-trigger" data-category="editorial" data-photo-id="12" data-caption="Editorial Look 01 — Modern Tailoring" data-tag="Editorial">
+          <img src="IMG_8463.JPG" data-fallback="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80" alt="Editorial 12" class="model-img" loading="lazy">
+          <div class="gallery-item-info">
+            <div>
+              <div class="title">HAUTE COUTURE</div>
+              <div class="category">EDITORIAL / 12</div>
+            </div>
+            <div class="gallery-view-icon">+</div>
+          </div>
+        </div>
+
+        <!-- PHOTO 13 -->
+        <div class="gallery-item lightbox-trigger" data-category="editorial" data-photo-id="13" data-caption="Editorial Look 02 — Monochrome Elegance" data-tag="Editorial">
+          <img src="IMG_8464.JPG" data-fallback="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=800&q=80" alt="Editorial 13" class="model-img" loading="lazy">
+          <div class="gallery-item-info">
+            <div>
+              <div class="title">AVANT-GARDE</div>
+              <div class="category">EDITORIAL / 13</div>
+            </div>
+            <div class="gallery-view-icon">+</div>
+          </div>
+        </div>
+
+        <!-- PHOTO 14 -->
+        <div class="gallery-item lightbox-trigger" data-category="editorial" data-photo-id="14" data-caption="Editorial Look 03 — Vogue Archive" data-tag="Editorial">
+          <img src="IMG_8465.JPG" data-fallback="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80" alt="Editorial 14" class="model-img" loading="lazy">
+          <div class="gallery-item-info">
+            <div>
+              <div class="title">VOGUE ARCHIVE</div>
+              <div class="category">EDITORIAL / 14</div>
+            </div>
+            <div class="gallery-view-icon">+</div>
+          </div>
+        </div>
+
+        <!-- PHOTO 15 -->
+        <div class="gallery-item lightbox-trigger" data-category="editorial" data-photo-id="15" data-caption="Editorial Look 04 — Modern Minimalism" data-tag="Editorial">
+          <img src="IMG_8466.JPG" data-fallback="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?auto=format&fit=crop&w=800&q=80" alt="Editorial 15" class="model-img" loading="lazy">
+          <div class="gallery-item-info">
+            <div>
+              <div class="title">STRUCTURED CHIC</div>
+              <div class="category">EDITORIAL / 15</div>
+            </div>
+            <div class="gallery-view-icon">+</div>
+          </div>
+        </div>
+
+        <!-- PHOTO 16 -->
+        <div class="gallery-item lightbox-trigger" data-category="editorial" data-photo-id="16" data-caption="Editorial Look 05 — High Fashion Posing" data-tag="Editorial">
+          <img src="IMG_8467.JPG" data-fallback="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=80" alt="Editorial 16" class="model-img" loading="lazy">
+          <div class="gallery-item-info">
+            <div>
+              <div class="title">PARIS RUNWAY</div>
+              <div class="category">EDITORIAL / 16</div>
+            </div>
+            <div class="gallery-view-icon">+</div>
+          </div>
+        </div>
+
+        <!-- PHOTO 17 -->
+        <div class="gallery-item lightbox-trigger" data-category="editorial" data-photo-id="17" data-caption="Editorial Look 06 — Dark Romance" data-tag="Editorial">
+          <img src="IMG_8469.JPG" data-fallback="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=800&q=80" alt="Editorial 17" class="model-img" loading="lazy">
+          <div class="gallery-item-info">
+            <div>
+              <div class="title">NOIR CONCEPT</div>
+              <div class="category">EDITORIAL / 17</div>
+            </div>
+            <div class="gallery-view-icon">+</div>
+          </div>
+        </div>
+
+        <!-- ===== 6 COMMERCIAL & LOOKBOOK PHOTOS (18 TO 23) ===== -->
+        <!-- PHOTO 18 -->
+        <div class="gallery-item lightbox-trigger" data-category="commercial" data-photo-id="18" data-caption="Commercial Lookbook 01 — Spring Campaign" data-tag="Commercial">
+          <img src="IMG_8471.JPG" data-fallback="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80" alt="Commercial 18" class="model-img" loading="lazy">
+          <div class="gallery-item-info">
+            <div>
+              <div class="title">SPRING LOOKBOOK</div>
+              <div class="category">COMMERCIAL / 18</div>
+            </div>
+            <div class="gallery-view-icon">+</div>
+          </div>
+        </div>
+
+        <!-- PHOTO 19 -->
+        <div class="gallery-item lightbox-trigger" data-category="commercial" data-photo-id="19" data-caption="Commercial Lookbook 02 — Luxury Resort" data-tag="Commercial">
+          <img src="IMG_8472.JPG" data-fallback="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=80" alt="Commercial 19" class="model-img" loading="lazy">
+          <div class="gallery-item-info">
+            <div>
+              <div class="title">RESORT COLLECTION</div>
+              <div class="category">COMMERCIAL / 19</div>
+            </div>
+            <div class="gallery-view-icon">+</div>
+          </div>
+        </div>
+
+        <!-- PHOTO 20 -->
+        <div class="gallery-item lightbox-trigger" data-category="commercial" data-photo-id="20" data-caption="Commercial Lookbook 03 — Denim & Street" data-tag="Commercial">
+          <img src="IMG_8473.JPG" data-fallback="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" alt="Commercial 20" class="model-img" loading="lazy">
+          <div class="gallery-item-info">
+            <div>
+              <div class="title">PREMIUM DENIM</div>
+              <div class="category">COMMERCIAL / 20</div>
+            </div>
+            <div class="gallery-view-icon">+</div>
+          </div>
+        </div>
+
+        <!-- PHOTO 21 -->
+        <div class="gallery-item lightbox-trigger" data-category="commercial" data-photo-id="21" data-caption="Commercial Lookbook 04 — Modern Minimalist Brand" data-tag="Commercial">
+          <img src="IMG_8474.JPG" data-fallback="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80" alt="Commercial 21" class="model-img" loading="lazy">
+          <div class="gallery-item-info">
+            <div>
+              <div class="title">URBAN CAPSULE</div>
+              <div class="category">COMMERCIAL / 21</div>
+            </div>
+            <div class="gallery-view-icon">+</div>
+          </div>
+        </div>
+
+        <!-- PHOTO 22 -->
+        <div class="gallery-item lightbox-trigger" data-category="commercial" data-photo-id="22" data-caption="Commercial Lookbook 05 — Tailored Suit Campaign" data-tag="Commercial">
+          <img src="IMG_8475.JPG" data-fallback="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80" alt="Commercial 22" class="model-img" loading="lazy">
+          <div class="gallery-item-info">
+            <div>
+              <div class="title">SUITING CAMPAIGN</div>
+              <div class="category">COMMERCIAL / 22</div>
+            </div>
+            <div class="gallery-view-icon">+</div>
+          </div>
+        </div>
+
+        <!-- PHOTO 23 -->
+        <div class="gallery-item lightbox-trigger" data-category="commercial" data-photo-id="23" data-caption="Commercial Lookbook 06 — Accessories & Footwear" data-tag="Commercial">
+          <img src="IMG_8477.JPG" data-fallback="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80" alt="Commercial 23" class="model-img" loading="lazy">
+          <div class="gallery-item-info">
+            <div>
+              <div class="title">ACCESSORIES LINE</div>
+              <div class="category">COMMERCIAL / 23</div>
+            </div>
+            <div class="gallery-view-icon">+</div>
+          </div>
+        </div>
+
+        <!-- ===== 6 BEAUTY & PORTRAIT PHOTOS (24 TO 29) ===== -->
+        <!-- PHOTO 24 -->
+        <div class="gallery-item lightbox-trigger" data-category="beauty" data-photo-id="24" data-caption="Beauty Close-Up 01 — Radiant Skin & Blue-Gray Eyes" data-tag="Beauty">
+          <img src="IMG_8478.JPG" data-fallback="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=80" alt="Beauty 24" class="model-img" loading="lazy">
+          <div class="gallery-item-info">
+            <div>
+              <div class="title">CLEAN BEAUTY</div>
+              <div class="category">BEAUTY / 24</div>
+            </div>
+            <div class="gallery-view-icon">+</div>
+          </div>
+        </div>
+
+        <!-- PHOTO 25 -->
+        <div class="gallery-item lightbox-trigger" data-category="beauty" data-photo-id="25" data-caption="Beauty Close-Up 02 — High Cosmetic Campaign" data-tag="Beauty">
+          <img src="IMG_8479.JPG" data-fallback="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=800&q=80" alt="Beauty 25" class="model-img" loading="lazy">
+          <div class="gallery-item-info">
+            <div>
+              <div class="title">COSMETICS</div>
+              <div class="category">BEAUTY / 25</div>
+            </div>
+            <div class="gallery-view-icon">+</div>
+          </div>
+        </div>
+
+        <!-- PHOTO 26 -->
+        <div class="gallery-item lightbox-trigger" data-category="beauty" data-photo-id="26" data-caption="Beauty Close-Up 03 — Editorial Lighting & Blond Hair" data-tag="Beauty">
+          <img src="IMG_8480.JPG" data-fallback="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="Beauty 26" class="model-img" loading="lazy">
+          <div class="gallery-item-info">
+            <div>
+              <div class="title">HAIR CARE STORY</div>
+              <div class="category">BEAUTY / 26</div>
+            </div>
+            <div class="gallery-view-icon">+</div>
+          </div>
+        </div>
+
+        <!-- PHOTO 27 -->
+        <div class="gallery-item lightbox-trigger" data-category="beauty" data-photo-id="27" data-caption="Beauty Close-Up 04 — Fine Jewelry Portrait" data-tag="Beauty">
+          <img src="IMG_8481.JPG" data-fallback="https://images.unsplash.com/photo-1521119989659-a83eee488004?auto=format&fit=crop&w=800&q=80" alt="Beauty 27" class="model-img" loading="lazy">
+          <div class="gallery-item-info">
+            <div>
+              <div class="title">JEWELRY CAMPAIGN</div>
+              <div class="category">BEAUTY / 27</div>
+            </div>
+            <div class="gallery-view-icon">+</div>
+          </div>
+        </div>
+
+        <!-- PHOTO 28 -->
+        <div class="gallery-item lightbox-trigger" data-category="beauty" data-photo-id="28" data-caption="Beauty Close-Up 05 — Natural Texture & Raw Elegance" data-tag="Beauty">
+          <img src="IMG_8482.JPG" data-fallback="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80" alt="Beauty 28" class="model-img" loading="lazy">
+          <div class="gallery-item-info">
+            <div>
+              <div class="title">SKINCARE STORY</div>
+              <div class="category">BEAUTY / 28</div>
+            </div>
+            <div class="gallery-view-icon">+</div>
+          </div>
+        </div>
+
+        <!-- PHOTO 29 -->
+        <div class="gallery-item lightbox-trigger" data-category="beauty" data-photo-id="29" data-caption="Beauty Close-Up 06 — Dramatic Studio Portrait" data-tag="Beauty">
+          <img src="IMG_8485.JPG" data-fallback="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80" alt="Beauty 29" class="model-img" loading="lazy">
+          <div class="gallery-item-info">
+            <div>
+              <div class="title">PORTRAIT MONOCHROME</div>
+              <div class="category">BEAUTY / 29</div>
+            </div>
+            <div class="gallery-view-icon">+</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: MOTION & RUNWAY / BACKSTAGE (PHOTOS 30, 31, 32, 33)
+       ========================================================================== -->
+  <section class="motion-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-tag">RUNWAY & DYNAMICS</span>
+        <h2 class="serif-title">MOTION & CATWALK</h2>
+        <div class="divider-line"></div>
+      </div>
+
+      <div class="motion-grid">
+        
+        <!-- MOTION 1 (PHOTO 30) -->
+        <div class="motion-card lightbox-trigger" data-photo-id="30" data-caption="Runway Walk — Paris Fashion Week Presentation" data-category="Runway Catwalk">
+          <!-- ================= PHOTO 30 ================= -->
+          <img src="IMG_8486.JPG" data-fallback="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" alt="Catwalk Walk 30" class="model-img" loading="lazy">
+          <div class="motion-card-footer">
+            <span>PARIS RUNWAY</span>
+            <span>30 / CATWALK</span>
+          </div>
+        </div>
+
+        <!-- MOTION 2 (PHOTO 31) -->
+        <div class="motion-card lightbox-trigger" data-photo-id="31" data-caption="Fluid Movement & Dynamic Posing Studio Session" data-category="Motion & Flow">
+          <!-- ================= PHOTO 31 ================= -->
+          <img src="IMG_8487.JPG" data-fallback="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" alt="Movement 31" class="model-img" loading="lazy">
+          <div class="motion-card-footer">
+            <span>MOTION STUDY</span>
+            <span>31 / FLOW</span>
+          </div>
+        </div>
+
+        <!-- MOTION 3 (PHOTO 32) -->
+        <div class="motion-card lightbox-trigger" data-photo-id="32" data-caption="Milan Fashion Backstage Moments" data-category="Backstage">
+          <!-- ================= PHOTO 32 ================= -->
+          <img src="IMG_8490.JPG" data-fallback="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="Backstage 32" class="model-img" loading="lazy">
+          <div class="motion-card-footer">
+            <span>MILAN BACKSTAGE</span>
+            <span>32 / LIVE</span>
+          </div>
+        </div>
+
+        <!-- MOTION 4 (PHOTO 33) -->
+        <div class="motion-card lightbox-trigger" data-photo-id="33" data-caption="Haute Couture Silhouette Runway Stride" data-category="Runway Catwalk">
+          <!-- ================= PHOTO 33 ================= -->
+          <img src="IMG_8492.JPG" data-fallback="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Runway Stride 33" class="model-img" loading="lazy">
+          <div class="motion-card-footer">
+            <span>COUTURE STRIDE</span>
+            <span>33 / RUNWAY</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 7: ABOUT & WORK WITH ME
+       ========================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="tracking-luxury" style="color: var(--text-gray); display: block; margin-bottom: 8px;">PROFILE & EXPERIENCE</span>
+          <h3 class="serif-title">DISCIPLINE, PASSION & VERSATILITY</h3>
+          <p>
+            <strong>KATERINA</strong> is a professional international model based between Europe and worldwide fashion capitals. With exact metric agency proportions (<strong>175 cm • 85-60-90</strong>), she brings strong technical runway movement, refined editorial posing, and camera readiness to every production.
+          </p>
+          <p>
+            Her experience spans across international runway presentations, lookbook campaigns, commercial e-commerce, and high beauty editorials for leading independent and mainstream fashion houses.
+          </p>
+        </div>
+
+        <div style="border-left: 1px solid var(--border-light); padding-left: 40px;">
+          <span class="tracking-luxury" style="color: var(--text-gray); display: block; margin-bottom: 16px;">KEY ATTRIBUTES</span>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase;">
+            <li style="display: flex; gap: 12px;"><strong>•</strong> 100% Metric Standard Proportions (Size 34/36 EU)</li>
+            <li style="display: flex; gap: 12px;"><strong>•</strong> Professional Catwalk & Runway Choreography</li>
+            <li style="display: flex; gap: 12px;"><strong>•</strong> Experienced in High Fashion & E-Commerce Workflow</li>
+            <li style="display: flex; gap: 12px;"><strong>•</strong> Available for Direct Bookings & Worldwide Travel</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 4 Service Formats -->
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="service-num">01</span>
+          <h4>HIGH FASHION & EDITORIAL</h4>
+          <p>Magazine spreads, cover stories, haute couture projects and conceptual artistic publications.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">02</span>
+          <h4>COMMERCIAL & LOOKBOOKS</h4>
+          <p>Seasonal brand campaigns, digital lookbooks, designer catalog production and commercial media.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">03</span>
+          <h4>RUNWAY & FASHION SHOWS</h4>
+          <p>Fashion Week presentations, designer runway walks, showroom fittings and trunk shows.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-num">04</span>
+          <h4>BEAUTY & CAMPAIGNS</h4>
+          <p>Skincare campaigns, cosmetic close-ups, luxury fine jewelry stories and fragrance imagery.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 8: CONTACT & BOOKING (PHOTOS 34, 35)
+       ========================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="sub-tag">INQUIRIES & CASTINGS</span>
+        <h2 class="serif-title">BOOKING & CONTACT</h2>
+        <div class="divider-line"></div>
+      </div>
+
+      <div class="contact-layout">
+        
+        <!-- Left Portrait Frame (PHOTO 34) -->
+        <div class="contact-portrait-frame lightbox-trigger" data-photo-id="34" data-caption="Contact Editorial Portrait 01" data-category="Booking">
+          <!-- ================= PHOTO 34 ================= -->
+          <img src="IMG_8493.JPG" data-fallback="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80" alt="Contact 34" class="model-img" loading="lazy">
+        </div>
+
+        <!-- Center Booking Form -->
+        <div class="booking-form-box">
+          <h3 class="serif-title">DIRECT INQUIRY</h3>
+          <span class="sub">FOR CASTING DIRECTORS & BRANDS</span>
+
+          <form id="bookingForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label class="form-label" for="clientName">YOUR NAME / BRAND OR AGENCY</label>
+              <input type="text" id="clientName" class="form-control" placeholder="e.g. Vogue Studio / Casting Director" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="clientEmail">EMAIL ADDRESS</label>
+              <input type="email" id="clientEmail" class="form-control" placeholder="agency@domain.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="projectType">PROJECT TYPE</label>
+              <select id="projectType" class="form-control" required>
+                <option value="" disabled selected>Select production format</option>
+                <option value="Editorial">Fashion Editorial</option>
+                <option value="Commercial">Commercial / Lookbook</option>
+                <option value="Runway">Runway / Fashion Show</option>
+                <option value="Beauty">Beauty / Jewelry Campaign</option>
+                <option value="Other">Other Direct Booking</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="shootDetails">DATES, LOCATION & DETAILS</label>
+              <textarea id="shootDetails" class="form-control" placeholder="Shoot dates, city, usage rights..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit" id="submitBtn">SEND BOOKING REQUEST</button>
+          </form>
+
+          <!-- Direct Links -->
+          <div class="direct-contacts">
+            <a href="https://t.me/katushaa_ak" target="_blank" rel="noopener" class="contact-pill">
+              <span class="label">TELEGRAM</span>
+              <span class="val">@katushaa_ak</span>
+            </a>
+            <a href="https://instagram.com/katushaa_ak" target="_blank" rel="noopener" class="contact-pill">
+              <span class="label">INSTAGRAM</span>
+              <span class="val">@katushaa_ak</span>
+            </a>
+            <a href="mailto:booking@katerinamodel.com" class="contact-pill">
+              <span class="label">DIRECT EMAIL</span>
+              <span class="val">booking@katerinamodel.com</span>
+            </a>
+            <a href="https://wa.me/" target="_blank" rel="noopener" class="contact-pill">
+              <span class="label">WHATSAPP</span>
+              <span class="val">+33 (0) 6 00 00 00</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Portrait Frame (PHOTO 35) -->
+        <div class="contact-portrait-frame contact-portrait-right lightbox-trigger" data-photo-id="35" data-caption="Contact Editorial Portrait 02" data-category="Booking">
+          <!-- ================= PHOTO 35 ================= -->
+          <img src="IMG_8486.JPG" data-fallback="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80" alt="Contact 35" class="model-img" loading="lazy">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">KATERINA</div>
+
+        <ul class="footer-nav">
+          <li><a href="#hero">Hero</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#snaps">Snaps</a></li>
+          <li><a href="#measurements">Measurements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 KATERINA. ALL RIGHTS RESERVED. HIGH FASHION PORTFOLIO.</div>
+        <div>METRIC STANDARD: HEIGHT 175 CM • 85-60-90 • SHOES 37 EU</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       FULLSCREEN LIGHTBOX MODAL (INDEXES ALL 35 PHOTOS)
+       ========================================================================== -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+    <button class="lightbox-btn lightbox-prev" id="lightboxPrev" aria-label="Previous Image">&#10094;</button>
+    <button class="lightbox-btn lightbox-next" id="lightboxNext" aria-label="Next Image">&#10095;</button>
+
+    <div class="lightbox-content-wrapper">
+      <img src="" alt="Enlarged model photograph" class="lightbox-img" id="lightboxImage">
+      <div class="lightbox-caption">
+        <span id="lightboxTitle">KATERINA PORTFOLIO</span>
+        <span class="lightbox-counter" id="lightboxCounter">01 / 35</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       VANILLA JAVASCRIPT CORE
+       ========================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      
+      /* ------------------------------------------------------------------------
+         1. SMART IMAGE FALLBACK HANDLER
+         Loads local 'photo_X.jpg', seamlessly falls back to luxury Unsplash photo
+         ------------------------------------------------------------------------ */
+      const modelImages = document.querySelectorAll('.model-img');
+      modelImages.forEach(img => {
+        // Test local file; if failed, fall back cleanly to data-fallback
+        img.addEventListener('error', function() {
+          if (this.dataset.fallback && this.src !== this.dataset.fallback) {
+            this.src = this.dataset.fallback;
+          }
+        });
+      });
+
+      /* ------------------------------------------------------------------------
+         2. MOBILE NAVIGATION DRAWER
+         ------------------------------------------------------------------------ */
+      const mobileToggle = document.getElementById('mobileToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const mobileLinks = document.querySelectorAll('.mobile-link');
+
+      mobileToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+      });
+
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('active');
+        });
+      });
+
+      /* ------------------------------------------------------------------------
+         3. PORTFOLIO TABS FILTER (VANILLA JS)
+         ------------------------------------------------------------------------ */
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filter = btn.getAttribute('data-filter');
+
+          galleryItems.forEach(item => {
+            if (filter === 'all' || item.getAttribute('data-category') === filter) {
+              item.classList.remove('hidden');
+              item.style.opacity = '0';
+              setTimeout(() => { item.style.opacity = '1'; }, 50);
+            } else {
+              item.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      /* ------------------------------------------------------------------------
+         4. FULLSCREEN LIGHTBOX (COVERS ALL 35 PHOTOS WITH NEXT/PREV & ESC KEYS)
+         ------------------------------------------------------------------------ */
+      const lightboxModal = document.getElementById('lightboxModal');
+      const lightboxImage = document.getElementById('lightboxImage');
+      const lightboxTitle = document.getElementById('lightboxTitle');
+      const lightboxCounter = document.getElementById('lightboxCounter');
+      const lightboxClose = document.getElementById('lightboxClose');
+      const lightboxPrev = document.getElementById('lightboxPrev');
+      const lightboxNext = document.getElementById('lightboxNext');
+
+      const triggers = Array.from(document.querySelectorAll('.lightbox-trigger'));
+      let currentIndex = 0;
+
+      function openLightbox(index) {
+        currentIndex = index;
+        const trigger = triggers[currentIndex];
+        const img = trigger.querySelector('img');
+        
+        lightboxImage.src = img.src;
+        lightboxTitle.textContent = trigger.dataset.caption || 'KATERINA EDITORIAL';
+        lightboxCounter.textContent = `${String(currentIndex + 1).padStart(2, '0')} / ${String(triggers.length).padStart(2, '0')}`;
+        
+        lightboxModal.classList.add('active');
+        lightboxModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        lightboxModal.classList.remove('active');
+        lightboxModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      function nextImage() {
+        currentIndex = (currentIndex + 1) % triggers.length;
+        openLightbox(currentIndex);
+      }
+
+      function prevImage() {
+        currentIndex = (currentIndex - 1 + triggers.length) % triggers.length;
+        openLightbox(currentIndex);
+      }
+
+      triggers.forEach((trigger, idx) => {
+        trigger.addEventListener('click', () => openLightbox(idx));
+      });
+
+      lightboxClose.addEventListener('click', closeLightbox);
+      lightboxNext.addEventListener('click', nextImage);
+      lightboxPrev.addEventListener('click', prevImage);
+
+      // Close on backdrop click
+      lightboxModal.addEventListener('click', (e) => {
+        if (e.target === lightboxModal) closeLightbox();
+      });
+
+      // Keyboard Controls
+      document.addEventListener('keydown', (e) => {
+        if (!lightboxModal.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') nextImage();
+        if (e.key === 'ArrowLeft') prevImage();
+      });
+
+      /* ------------------------------------------------------------------------
+         5. STICKY HEADER SCROLL EFFECT
+         ------------------------------------------------------------------------ */
+      const header = document.getElementById('header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          header.style.height = '72px';
+          header.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+        } else {
+          header.style.height = '84px';
+          header.style.backgroundColor = 'rgba(255, 255, 255, 0.94)';
+        }
+      });
+
+    });
+
+    /* ------------------------------------------------------------------------
+       6. FORM SUBMISSION FEEDBACK
+       ------------------------------------------------------------------------ */
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const submitBtn = document.getElementById('submitBtn');
+      const originalText = submitBtn.textContent;
+      
+      submitBtn.textContent = 'REQUEST SENT ✓';
+      submitBtn.style.backgroundColor = '#1a1a1a';
+      submitBtn.style.color = '#ffffff';
+
+      setTimeout(() => {
+        alert('Thank you. Your booking inquiry for KATERINA has been recorded.');
+        document.getElementById('bookingForm').reset();
+        submitBtn.textContent = originalText;
+        submitBtn.style.backgroundColor = '';
+        submitBtn.style.color = '';
+      }, 600);
+    }
+  </script>
+</body>
+</html>
